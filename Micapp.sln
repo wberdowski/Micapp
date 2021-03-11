@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Micapp", "Micapp\Micapp.csproj", "{B6ABADFE-4453-48DE-AA09-EBF5E2365643}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MicappReceiver", "MicappReceiver\MicappReceiver.csproj", "{E24B516B-237F-4296-B5D2-A0B863CDA9D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Micapp.Common", "Micapp.Common\Micapp.Common.csproj", "{3D8597F8-C006-4D35-83EC-82097C89C469}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6ABADFE-4453-48DE-AA09-EBF5E2365643}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6ABADFE-4453-48DE-AA09-EBF5E2365643}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6ABADFE-4453-48DE-AA09-EBF5E2365643}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{B6ABADFE-4453-48DE-AA09-EBF5E2365643}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6ABADFE-4453-48DE-AA09-EBF5E2365643}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B6ABADFE-4453-48DE-AA09-EBF5E2365643}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{E24B516B-237F-4296-B5D2-A0B863CDA9D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E24B516B-237F-4296-B5D2-A0B863CDA9D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E24B516B-237F-4296-B5D2-A0B863CDA9D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E24B516B-237F-4296-B5D2-A0B863CDA9D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D8597F8-C006-4D35-83EC-82097C89C469}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D8597F8-C006-4D35-83EC-82097C89C469}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D8597F8-C006-4D35-83EC-82097C89C469}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D8597F8-C006-4D35-83EC-82097C89C469}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {947FDD2D-69E6-4B89-B61B-D4CF1E3550B6}
+	EndGlobalSection
+EndGlobal

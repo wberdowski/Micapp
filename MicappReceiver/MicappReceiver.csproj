@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="BitSerializer" Version="1.0.1" />
+    <PackageReference Include="Concentus" Version="1.1.7" />
+    <PackageReference Include="CSCore" Version="1.2.1.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Micapp.Common\Micapp.Common.csproj" />
+  </ItemGroup>
+
+</Project>
