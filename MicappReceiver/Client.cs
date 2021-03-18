@@ -10,7 +10,6 @@ using System.IO;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
-using System.Timers;
 
 namespace MicappReceiver
 {
@@ -61,6 +60,8 @@ namespace MicappReceiver
                 return;
             }
 
+            Debug.WriteLine("[UDP] " + len);
+
             if (!ControlSocket.Connected)
             {
                 return;
@@ -95,6 +96,8 @@ namespace MicappReceiver
                 OnDisconnect();
                 return;
             }
+
+            Debug.WriteLine("[TCP] " + len);
 
             if (len == 0)
             {

@@ -25,7 +25,6 @@ namespace Micapp
         private static ChannelIn RECORDER_CHANNELS = ChannelIn.Mono;
         private static Android.Media.Encoding RECORDER_AUDIO_ENCODING = Android.Media.Encoding.Pcm16bit;
         private AudioRecord recorder = null;
-
         const int BufferSize = AppConfig.FrameSize * 2;
         byte[] buffer = new byte[BufferSize];
 
@@ -40,6 +39,8 @@ namespace Micapp
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             // Set our view from the "main" layout resource
             SetContentView(Resource.Layout.activity_main);
+
+            DeviceDisplay.KeepScreenOn = true;
 
             editTextAddress = FindViewById<EditText>(Resource.Id.editTextAddress);
 
@@ -164,7 +165,7 @@ namespace Micapp
                 short[] inputAudioSamples = new short[length / 2];
                 byte[] outputBuffer = new byte[1275];
 
-                Buffer.BlockCopy(buffer, 0, inputAudioSamples, 0, length);          
+                Buffer.BlockCopy(buffer, 0, inputAudioSamples, 0, length);
 
                 int encodedLen = encoder.Encode(inputAudioSamples, 0, AppConfig.FrameSize, outputBuffer, 0, outputBuffer.Length);
 

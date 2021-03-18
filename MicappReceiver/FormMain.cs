@@ -69,7 +69,8 @@ namespace MicappReceiver
             try
             {
                 Debug.WriteLine($"Client {client.ControlSocket.RemoteEndPoint} disconnected.");
-            } catch (ObjectDisposedException)
+            }
+            catch (ObjectDisposedException)
             {
 
             }
@@ -109,7 +110,7 @@ namespace MicappReceiver
             controlSocket.Close();
             dataSocket.Close();
 
-            foreach(var c in clients)
+            foreach (var c in clients)
             {
                 c.Dispose();
             }
